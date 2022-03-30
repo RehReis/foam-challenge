@@ -1,10 +1,11 @@
-import './App.css';
+import './style/App.css';
+import Images from './components/Images.jsx';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-      </header>
+      <h1>Foaming Classification System</h1>
+      <Images />
     </div>
   );
 }
