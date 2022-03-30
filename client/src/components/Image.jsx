@@ -2,10 +2,19 @@ import React from 'react';
 import Moment from 'moment';
 
 function Image({image}) {
+  let classification;
+  if (image.status) {
+    classification = 'Foaming'
+  } else if (image.status === false) {
+    classification = 'Non-foaming'
+  } else {
+    classification = 'Unclassified'
+  }
+
   return (
     <div className="col">
       <div className="card">
-        <h3 className="card-title">Unclassified</h3>
+        <h3 className="card-title">{classification}</h3>
         <p className="card-text"><strong>Last modified: </strong>{Moment(image.lastModified).format('lll')}</p>
         <img src={image.url} alt="camera for foaming experiment"/>
         <form className="card-text">
