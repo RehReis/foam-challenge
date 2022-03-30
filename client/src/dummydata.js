@@ -59,10 +59,6 @@ const dummyData = [
     "url": "https://take-home-foam-challenge.s3.us-west-2.amazonaws.com/prod-exp13436-2020-01-08-at-04.39.29-xf8x9rv7jewwpvoiopke85ltyhak25bo94pq9g4sdw0asow7yemvsewkfqz3wrkt.png",
     "lastModified": "2022-02-23T21:31:27.000Z"
   },
-  {
-    "url": "https://take-home-foam-challenge.s3.us-west-2.amazonaws.com/prod-exp13436-2020-01-08-at-04.40.33-k0nadz0o6qjxdzbvtxhge0h8oas0kjkf8jjmugfr6ae3cv5qh8o9rby94fnbf2or.png",
-    "lastModified": "2022-02-23T21:31:27.000Z"
-  }
 ];
 
 export default dummyData;
