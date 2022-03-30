@@ -1,6 +1,6 @@
 const classification = require('./');
 
-let getClassification = () => {
+module.exports.getClassification = () => {
   const result = 12;
   let page = 0;
   classification
@@ -11,5 +11,3 @@ let getClassification = () => {
       console.log(result);
     })
 }
-
-getClassification();
