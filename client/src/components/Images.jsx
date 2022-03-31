@@ -8,7 +8,6 @@ function Images() {
   const [page, setPage] = useState(0);
 
   const getImages = () => {
-    console.log('Inside get', filter);
     axios
       .get('http://localhost:3070/', { params: {page, filter} })
       .then(({data}) => {
