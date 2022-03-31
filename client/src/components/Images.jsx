@@ -24,7 +24,7 @@ function Images() {
   return (
     <div className="row row-cols-1 row-cols-md-3 g-4">
       {imgList.map(img =>
-        (<Image key={img['_id']} image={img} />)
+        (<Image key={img['_id']} image={img} getImages={getImages}/>)
       )}
     </div>
   )

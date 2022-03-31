@@ -8,7 +8,7 @@ db.connect('mongodb://localhost/foamChallenge')
 const classificationSchema = new db.Schema({
   url: {type: String, required: true},
   lastModified: {type: Date, default: Date.now},
-  status: {type: Boolean, required: true}
+  status: {type: Boolean}
 });
 
 const classification = db.model("classification", classificationSchema);

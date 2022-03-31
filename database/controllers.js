@@ -14,3 +14,15 @@ module.exports.getClassification = (req, res) => {
       res.sendStatus(500)
     })
 }
+
+module.exports.changeClassification = (req, res) => {
+  let {id, status} = req.body;
+  classification
+    .findOneAndUpdate({_id: id}, {status: status, lastModified: Date.now()})
+    .then(result => {
+      res.sendStatus(201);
+    })
+    .catch(err => {
+      res.sendStatus(501);
+    })
+}
